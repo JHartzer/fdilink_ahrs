@@ -66,7 +66,7 @@ private:
 
   //serial
   serial::Serial serial_; //声明串口对象
-  std::string serial_port="/dev/fdilink_ahrs";
+  std::string serial_port="/dev/wheeltec";
   //std::string serial_port;
 
   int serial_baud=921600;

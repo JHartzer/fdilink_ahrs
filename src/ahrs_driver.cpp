@@ -22,7 +22,7 @@ ahrsBringup::ahrsBringup()
   this->declare_parameter<std::string>("mag_pose_2d_topic","/mag_pose_2d");
   this->get_parameter("mag_pose_2d_topic", mag_pose_2d_topic);
 
-  this->declare_parameter<std::string>("serial_port","/dev/fdilink_ahrs");
+  this->declare_parameter<std::string>("serial_port","/dev/wheeltec");
   this->get_parameter("serial_port", serial_port);
 
   this->declare_parameter<std::int64_t>("serial_baud",921600);

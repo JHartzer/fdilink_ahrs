@@ -14,9 +14,9 @@ from launch_ros.actions import Node
 def generate_launch_description():
     ahrs_driver=Node(
         package="fdlink_ahrs",
-        node_executable="ahrs_driver_node",
+        executable="ahrs_driver_node",
         parameters=[{'if_debug': False,
-            'serial_port':'/dev/fdilink_ahrs',
+            'serial_port':'/dev/wheeltec',
             'serial_baud':921600,
             'imu_topic':'/imu',
             'imu_frame_id':'gyro_link',
